@@ -139,10 +139,50 @@
       <h3 >Click <button id="start" type="submit" class="btn">here</button> to get started!</h3>
       <form>
         <h4>Do you prefer day or night classes?</h4>
-        <select id="shift" class="form-control">
-          <option value="Day">Day classes</option>
-          <option value="Night">Night classes</option>
+          <select id="shift" class="form-control">
+            <option value="day">Day classes</option>
+            <option value="night">Night classes</option>
+          </select>
+        <h4>Do you prefer full or part time classes?</h4>
+        <div id="fullPart"class="radio">
+          <label>
+            <input type="radio" name="time" value="full">Full time classes</input>
+          </label><br>
+          <label>
+            <input type="radio" name="time" value="part">Part time classes</input>
+          </label><br>
+        </div>
+        <h4>Are you more Picasso, or Alan Turing?</h4>
+        <select id="artMath" class="form-control">
+          <option value="art">Art Junkie</option>
+          <option value="math">Math wiz</option>
         </select>
+        <div id="fullPart"class="radio">
+          <label>
+            <input type="radio" name="time" value="full">Full time classes</input>
+          </label><br>
+          <label>
+            <input type="radio" name="time" value="part">Part time classes</input>
+          </label><br>
+        </div>
+        <h4>Do you prefer working for an established corporation or a start up?</h4>
+        <div id="corpStart"class="radio">
+          <label>
+            <input type="radio" name="size" value="corp">Corporation</input>
+          </label><br>
+          <label>
+            <input type="radio" name="size" value="startUp">Start Up</input>
+          </label><br>
+        </div>
+        <h4>Are you especially intrestesd in making applications for phones?</h4>
+        <div id="phone"class="radio">
+          <label>
+            <input type="radio" name="phone" value="yes">Yes</input>
+          </label><br>
+          <label>
+            <input type="radio" name="phone" value="no">No</input>
+          </label><br>
+        </div>
       </form>
     </div>
   </body>

@@ -4,7 +4,6 @@
 .jumbotron h1 {
     font-size: 35px;
     text-align: center;
-
   }
 h2 {
   color: #00b3b4;
@@ -26,6 +25,9 @@ span {
 h3 {
   color: #00b3b4;
   text-align: center;
+}
+h4 {
+  color: #00b3b4;
 }
 form {
   /*display: none;*/
