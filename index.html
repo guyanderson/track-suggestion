@@ -137,7 +137,7 @@
       </div>
       <h2>Let's find the Track that best fits you!</h2>
       <h3 >Click <button id="start" type="submit" class="btn">here</button> to get started!</h3>
-      <form>
+      <form id="personality">
         <h4>Do you prefer day or night classes?</h4>
           <select id="shift" class="form-control">
             <option value="day">Day classes</option>
@@ -157,14 +157,6 @@
           <option value="art">Art Junkie</option>
           <option value="math">Math wiz</option>
         </select>
-        <div id="fullPart"class="radio">
-          <label>
-            <input type="radio" name="time" value="full">Full time classes</input>
-          </label><br>
-          <label>
-            <input type="radio" name="time" value="part">Part time classes</input>
-          </label><br>
-        </div>
         <h4>Do you prefer working for an established corporation or a start up?</h4>
         <div id="corpStart"class="radio">
           <label>
@@ -183,6 +175,7 @@
             <input type="radio" name="phone" value="no">No</input>
           </label><br>
         </div>
+        <button type="submit" class="btn">submit</button>
       </form>
     </div>
   </body>
