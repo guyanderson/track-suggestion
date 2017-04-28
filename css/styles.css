@@ -1,10 +1,22 @@
+.jumbotron {
+  background-color: #969696;
+}
 .jumbotron h1 {
     font-size: 35px;
     text-align: center;
+
   }
 h2 {
+  color: #00b3b4;
   text-align: center;
 }
 .panel {
+  color: #00b3b4;
   display: block;
+}
+.panel-title {
+  color: #00b3b4;
+}
+p {
+  color: #00b3b4;
 }
