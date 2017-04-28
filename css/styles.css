@@ -23,3 +23,11 @@ p {
 span {
   color: #FF0000;
 }
+h3 {
+  color: #00b3b4;
+  text-align: center;
+}
+form {
+  /*display: none;*/
+
+}
