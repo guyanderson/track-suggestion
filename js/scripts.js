@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
 
+
+    // $("#start").click(function() {
+    //   show(form)
+    // });
+
+
+
   $("form#personality").submit(function(event){
     event.preventDefault()
     var shiftInput = $("#shift").val();
