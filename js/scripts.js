@@ -1,12 +1,13 @@
 $(document).ready(function(){
 
-
-
-    // $("#start").click(function() {
-    //   show(form)
-    // });
-
-
+  $("#start").click(function(start) {
+    $("form").show();
+    $("#tracts").hide();
+});
+  // });$("#start").click(function() {
+  //   $("form").show();
+  //   $("#tracts").hide();
+  // });
 
   $("form#personality").submit(function(event){
     event.preventDefault()
@@ -15,7 +16,6 @@ $(document).ready(function(){
     var artMathInput = $("#artMath").val();
     var corpStartInput = $("input:radio[name=size]:checked").val();
     var phoneInput = $("input:radio[name=phone]:checked").val();
-        //alert(artMathInput)
 
   if(!shiftInput || !fullPartInput || !artMathInput || !corpStartInput || !phoneInput){
        alert("Please completly fill out the form!");
