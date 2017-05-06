@@ -1,13 +1,11 @@
+function showHide(show, hide){
+   $(show).show();
+   $(hide).hide();
+ };
+
 $(document).ready(function(){
 
-  $("#start").click(function(start) {
-    $("form").show();
-    $("#tracts").hide();
-});
-  // });$("#start").click(function() {
-  //   $("form").show();
-  //   $("#tracts").hide();
-  // });
+
 
   $("form#personality").submit(function(event){
     event.preventDefault()
