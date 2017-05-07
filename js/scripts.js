@@ -1,6 +1,10 @@
-function showHide(show, hide){
+function showHide(show, hide, hidea, hideb, hidec, hided){
    $(show).show();
    $(hide).hide();
+   $(hidea).hide();
+   $(hideb).hide();
+   $(hidec).hide();
+   $(hided).hide();
  };
  function showHide2(hide){
     // $(show).show();
@@ -11,7 +15,9 @@ function showHide(show, hide){
 
 $(document).ready(function(){
 
-
+// #java", "#css", "#ruby
+// $("form").show()
+ // $("#java").show()
 
   $("form").submit(function(event){
     event.preventDefault()
@@ -23,10 +29,14 @@ $(document).ready(function(){
 
   if(!shiftInput || !fullPartInput || !artMathInput || !corpStartInput || !phoneInput){
        alert("Please completly fill out the form!");
+       $("form").show();
      } else{
       if(shiftInput === "day" || shiftInput === "night"){
         if(artMathInput === "art" && phoneInput === "yes"){
-          alert("Your best choices are CSS, Java, and Ruby!");
+          $("#css").show();
+          $("#java").show();
+          $("#ruby").show();
+          // alert("Your best choices are CSS, Java, and Ruby!");
         }
           else if(corpStartInput === "corp" && artMathInput === "math"){
             alert("Your best choices are C#, Java, PHP!");

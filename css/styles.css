@@ -21,6 +21,7 @@ p {
 }
 span {
   color: #FF0000;
+  cursor: grabbing;
 }
 h3 {
   color: #00b3b4;
@@ -31,5 +32,15 @@ h4 {
 }
 form {
   display: none;
-
+}
+span:hover {
+ cursor: pointer;
+}
+#choice1 {
+  display: none;
+  text-align: center;
+}
+#choice2 {
+  display: none;
+  text-align: center;
 }
