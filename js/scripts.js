@@ -2,12 +2,18 @@ function showHide(show, hide){
    $(show).show();
    $(hide).hide();
  };
+ function showHide2(hide){
+    // $(show).show();
+    // $(show).show();
+    // $(show).show();
+    $(hide).hide();
+  };
 
 $(document).ready(function(){
 
 
 
-  $("form#personality").submit(function(event){
+  $("form").submit(function(event){
     event.preventDefault()
     var shiftInput = $("#shift").val();
     var fullPartInput = $("input:radio[name=time]:checked").val();
