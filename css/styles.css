@@ -40,3 +40,7 @@ span:hover {
   display: none;
   text-align: center;
 }
+#refresh {
+  display: none;
+  margin: auto;
+}

@@ -8,18 +8,13 @@ function showHide(show, hide, hide1, hide2, hide3, hide4, hide5){
    $(hide5).hide();
  };
  function showHide2(hide){
-    // $(show).show();
-    // $(show).show();
-    // $(show).show();
-    $(hide).hide();
-  };
+   $(hide).hide();
+ }
+function reload(){
+  location.reload();
+}
 
 $(document).ready(function(){
-
-// #java", "#css", "#ruby
-// $("form").show()
- // $("#java").show()
-
   $("form").submit(function(event){
     event.preventDefault()
     var shiftInput = $("#shift").val();
@@ -38,16 +33,25 @@ $(document).ready(function(){
           $("#java").show();
           $("#ruby").show();
           $("#success").show();
-          // alert("Your best choices are CSS, Java, and Ruby!");
-        }
-          else if(corpStartInput === "corp" && artMathInput === "math"){
-            alert("Your best choices are C#, Java, PHP!");
-          }
-          else if(phoneInput === "yes"){
-            alert("Your best choices are CSS, Ruby, and Java!");
-          }
-        else {
-          alert("Your best choices are C#, PHP, and java");
+          $("#refresh").show();
+        } else if(corpStartInput === "corp" && artMathInput === "math"){
+            $("c").show();
+            $("#java").show();
+            $("#php").show();
+            $("#success").show();
+            $("#refresh").show();
+        } else if(phoneInput === "yes"){
+            $("#css").show();
+            $("#ruby").show();
+            $("#java").show();
+            $("#success").show();
+            $("#refresh").show();
+        } else {
+            $("#c").show();
+            $("#php").show();
+            $("#java").show();
+            $("#success").show();
+            $("#refresh").show();
         }
       }
     }
