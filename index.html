@@ -136,8 +136,10 @@
             </div>
           </div>
         </div>
-        <h2>Let's find the Track that best fits you!</h2>
-        <h3>Click<button id="start" onclick="showHide('form', '#c', '#css', '#java', '#php', '#ruby')" type="submit" class="btn">here</button> to get started!</h3>
+        <div id="startBox">
+          <h2>Let's find the Track that best fits you!</h2>
+          <h3>Click<button id="start" onclick="showHide('form', '#c', '#css', '#java', '#php', '#ruby', '#startBox')" type="submit" class="btn">here</button> to get started!</h3>
+        </div>
       </div>
       <form id="form">
         <h4>Do you prefer day or night classes?</h4>
@@ -179,6 +181,9 @@
         </div>
         <button id="submit" onclick="showHide2('form')" type="submit" class="btn">submit</button>
       </form>
+      <div id="success">
+        <h3>Based on your answers, we recommend the following tracts!</h3>
+      </div>
     </div>
   </body>
 </html>

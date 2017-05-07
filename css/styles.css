@@ -36,11 +36,7 @@ form {
 span:hover {
  cursor: pointer;
 }
-#choice1 {
-  display: none;
-  text-align: center;
-}
-#choice2 {
+#success {
   display: none;
   text-align: center;
 }

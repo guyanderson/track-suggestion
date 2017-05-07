@@ -1,10 +1,11 @@
-function showHide(show, hide, hidea, hideb, hidec, hided){
+function showHide(show, hide, hide1, hide2, hide3, hide4, hide5){
    $(show).show();
    $(hide).hide();
-   $(hidea).hide();
-   $(hideb).hide();
-   $(hidec).hide();
-   $(hided).hide();
+   $(hide1).hide();
+   $(hide2).hide();
+   $(hide3).hide();
+   $(hide4).hide();
+   $(hide5).hide();
  };
  function showHide2(hide){
     // $(show).show();
@@ -36,6 +37,7 @@ $(document).ready(function(){
           $("#css").show();
           $("#java").show();
           $("#ruby").show();
+          $("#success").show();
           // alert("Your best choices are CSS, Java, and Ruby!");
         }
           else if(corpStartInput === "corp" && artMathInput === "math"){
